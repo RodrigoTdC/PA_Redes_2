@@ -22,13 +22,25 @@ Código para coletar informações de temperatura, umidade e luminosidade de um 
 
 ## Instruções
 
-[Exemplo de circuito](Exemplo_circuito.png)
+### Links úteis
 
-O programa possui alguns parâmetros que devem ser ajustados antes do uso:
+* [Como instalar e rodar o ThingsBoard \(em inglês)](https://thingsboard.io/docs/user-guide/install/windows/)
+* [Como inserir um novo dispositivo no ThingsBoard \(em inglês)](https://thingsboard.io/docs/user-guide/ui/devices/)
+* [Como instalar o Arduino IDE e configurá-lo para uso com o ESP32](https://www.usinainfo.com.br/blog/programar-esp32-com-a-ide-arduino-tutorial-completo/)
+
+### Sugestão de circuito
+
+<p align="center">
+  <img width="459" height="284" src="Exemplo_circuito.png">
+</p>
+
+### Código
+
+O programa possui alguns parâmetros importantes:
 
 | Parâmetro | Descrição |
 | --- | --- |
-| **delay** | Intervalo de amostragem. Valores abaixo de 2000ms não são recomendados |
+| **delay** | Intervalo entre amostragens. Valores abaixo de 2000ms não são recomendados |
 | **ssid** | SSID da rede |
 | **wifiPassword** | Senha da rede wifi |
 | **clientID** | ID do dispositivo no Thingsboard |
@@ -36,3 +48,5 @@ O programa possui alguns parâmetros que devem ser ajustados antes do uso:
 | **mqttPassword** | Senha do dispositivo no Thingsboard (opcional) |
 | **address** | Endereço da máquina hospedeira do servidor do Thingsboard |
 | **port** | Porta dedicada para o servidor do Thingsboard |
+
+Eles devem ser ajustados antes de enviar o código para a placa.

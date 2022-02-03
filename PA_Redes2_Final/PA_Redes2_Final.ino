@@ -11,16 +11,16 @@ PubSubClient MQTT(espClient);
 
 DHT dht(DHTPIN, DHTTYPE);
 
-const int delay = 2000;    //Intervalo de amostragem. Valores abaixo de 2000ms não são recomendados
+const int delay = 2000;    //Intervalo entre amostragens. Valores abaixo de 2000ms não são recomendados
 
 const char* ssid = "";   //SSID da rede wifi
 const char* wifiPassword =  "";   //Senha da rede wifi
 
 const char* clientID = "";    //ID do dispositivo no Thingsboard
 const char* token = "";    //Token ou nome de usuário do dispositivo no Thingsboard
-const char* mqttPassword = "";   //Senha do dispositivo    //Senha do dispositivo no Thingsboard (opcional)
+const char* mqttPassword = "";   //Senha do dispositivo no Thingsboard (opcional)
 
-const char* address = "localhost";    //Endereço da máquina hospedeira do servidor do Thingsboard
+const char* address = "";    //Endereço da máquina hospedeira do servidor do Thingsboard
 const int port = 1883;    //Porta dedicada para o servidor do Thingsboard
 
 void setup() {

@@ -22,6 +22,8 @@ Código para coletar informações de temperatura, umidade e luminosidade de um 
 
 ## Instruções
 
+[Exemplo de circuito](Exemplo_circuito.png)
+
 O programa possui alguns parâmetros que devem ser ajustados antes do uso:
 
 | Parâmetro | Descrição |
